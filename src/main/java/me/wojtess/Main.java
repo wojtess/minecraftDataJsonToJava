@@ -143,7 +143,7 @@ public class Main {
                     } catch (Exception ex) {}
 
                     builder.append("         ");
-                    builder.append(String.format("blocks.add(new Block(%s,\"%s\",\"%s\",%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,Material.valueOf(\"%s\")));\n",id,name,displayName,hardness,stackSize,diggable,boundingBox,drop,variations,transparent,emitLight,filterLight,resistance,harvestTools,material));
+                    builder.append(String.format("blocks.add(new Block(%s,\"%s\",\"%s\",%s,%s,%s,\"%s\",%s,%s,%s,%s,%s,%s,%s,Material.valueOf(\"%s\")));\n",id,name,displayName,hardness,stackSize,diggable,boundingBox,drop,variations,transparent,emitLight,filterLight,resistance,harvestTools,material));
                 }
             }
             builder.deleteCharAt(builder.length() - 1);
